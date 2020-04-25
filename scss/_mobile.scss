@@ -1,0 +1,145 @@
+// bg screen
+
+@include mediaXl{
+  .background{
+      grid-template-columns: repeat(2, 1fr);
+  }
+ 
+}
+
+@include mediaLg{
+    .background{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@include mediaMd{
+
+    main {
+        align-items: center;
+        text-align: center;
+    
+
+        .lg-heading{
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            
+            &.show{
+                transform:  translate3d(0,0,0);
+            }
+            }
+
+            .icons{
+                margin-bottom: 50px;
+            }
+    }
+
+    
+    ul.menu-nav, div.menu-branding{
+        float: none;
+        width: 100%;
+        min-height: 0;
+    }
+    
+    
+    .menu-nav{
+        height: 70vh;
+        transform: translate3d(-100%, 0,0); 
+        font-size: 24px;
+    }
+
+    .menu-branding{
+        height: 30vh;
+        transform: translate3d(100%,0,0);
+
+        .portrait{
+            background: url('../img/single.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 250px;
+            border: solid 5px #e7eaf6;
+        }
+    }
+
+    .background{
+        grid-template-columns: 1fr;
+    }
+
+  
+ 
+  
+}
+
+@include mediaSm{
+
+    *{
+        margin: 0;
+        padding: 0;
+       
+    }
+
+   main{
+    height: 110vh;
+    .lg-heading{
+        margin-top: 10vh;
+    
+    #home h1{
+        font-size-adjust: 3rem;
+    }
+    }
+
+    .icons{
+        margin-bottom: 10px;
+    }
+
+   }
+
+
+   section#work{
+    height: auto;
+    p{
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        width: 200px;
+    }
+    .projects{
+
+            .job{
+                display: grid;
+                text-align: center;
+                grid-column: 1;
+                margin: 10px auto;
+                border-bottom: solid 2px rgba($primary-color, 0.5);
+
+                h2{
+                    font-size: 14px;
+                    padding: 0 auto;
+                    margin: 0;
+                }
+           
+                h4{
+                    font-size: 12px;
+                    padding:0 auto;
+                }
+
+            }
+        }
+ }
+
+ 
+ .background{
+    grid-template-columns: 1;
+}
+
+
+    
+
+
+    
+    
+
+
+}

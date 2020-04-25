@@ -1,0 +1,20 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path scss scss/main.scss  css/main.css",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Ya-Hsuan",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  }
+}

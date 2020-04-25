@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Welcome to Ya-Hsuan website</title>
+</head>
+
+
+<body id="bg-img">
+        <header>
+                <div class="menu-btn">
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                 </div>
+                  
+            
+                 <nav class="menu">
+                        <div class="menu-branding">
+                          <div class="portrait"></div>
+                        </div>
+                        <ul class="menu-nav">
+                          <li class="nav-item current">
+                            <a href="index.html" class="nav-link">
+                              Home
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#about" class="nav-link">
+                              About
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#work" class="nav-link">
+                              Work
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                              Contact
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+              </header>
+
+      <div id="ageWrapper">
+        <div id="agePopUp">
+          <h2>Are you over 18?</h2>
+          <a href="https://www.felixvestra.com" id="ageOkay">Yes</a>
+          <a href="https://www.felixvestra.com" id="ageBad">No</a>
+        </div>
+      </div>
+      <script src="js/verification.js"></script>
+    <section class="main" id="home">
+    
+        <h1 class="lg-heading">
+            Ya-Hsuan <span class="text-secondary">Lin</span>
+        </h1>
+        <h2 class="sm-heading">
+            #Web Developer & #Programmer & #Entrepreneur
+        </h2>
+    <script src="js/main.js"></script>
+  </section>
+
+      <!--Section - Work Start-->
+          <section id="work">
+              <p class="lg-heading">Milestone</p>
+              <div class="timeline">
+                <ol>
+                    <li>
+                        <div>
+                            <time>Aug/2014-Mar/2015</time>
+                            Associate Product Manager <br>
+                            EZTABLE
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2018</time>
+                            Graduated from <br>
+                            Northeastern University <br>
+                            Informatics
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>Apr/2018-May/2019</time>
+                            Web Developer at <br>
+                            Scientific and Medical <br>
+                            Coalition Against Cancer
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>Feb/2019-Mar/2019</time>
+                            Freelance Web Developer/Designer at <br>
+                            Strategis
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>Jun/2019-Nov/2019</time>
+                            Web Developer/Designer at <br>
+                            MĀSKSKINCARE.com &&
+                            Hemp Garden
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>Dec/2019-present</time>
+                            Front End Web Developer at <br>
+                            ST<em>A</em>T
+                        </div>
+                    </li>
+                    <li>
+                      <div>
+                          <time>Future</time>
+                          Contact me!!
+                      </div>
+                  </li>
+        
+                </ol>        
+           
+            </div>
+            <div class="arrows">
+                <button class="arrow arrow__prev disabled">
+                    <i class="fa fa-chevron-circle-left" alt="prev timeline arrow"></i>
+                </button>
+                <button class="arrow arrow__next">
+                    <i class="fa fa-chevron-circle-right" alt="next timeline arrow"></i>
+                </button>
+            </div>
+            <script>
+                //timeline
+                const arrowPre = document.querySelector('.arrow__prev');
+              const arrowNext = document.querySelector('.arrow__next');
+            
+              arrowNext.onclick = function() {
+                  document.querySelector('.timeline').scrollLeft += 50;
+              };
+              arrowPre.onclick = function() {
+                  document.querySelector('.timeline').scrollLeft -= 50;
+              };
+              </script>
+          </section>
+      <!--Section - Work End-->
+      
+     <!--Section - About Start-->
+     <section id="about">
+        <p class="lg-heading">About</p>
+            <div class="background">
+                <div class="education">
+                  <div class="degree degree-1">
+                      <h2>Northeastern University, United States</h2>
+                      <h4>Master of Professional Studies Degree, Informatics</h4>
+                  </div>
+                  <div class="degree degree-2">
+                      <h2>Soochow University, Taiwan</h2>
+                      <h4>Business Administration Master Degree, Customer Service</h4>
+                  </div>
+                  <div class="degree degree-3">
+                      <h2>Chinese Culture University, Taiwan</h2>
+                      <h4>Bachelor of Science Degree, Information and Communication</h4>
+                  </div>
+                </div>
+              
+              <div class="summary">
+                  <h5>Goal-orientated web developer with three years of experience in developing customer-centric E-commerce websites. Proven
+                    ability to execute technology projects with coordination between people from various departments to deliver products to non-technical
+                    end-users. Leverage technical and analytical skills to support critical business decisions, optimize customer relationship management
+                    and create revenue growth.</h5>
+              </div>
+            </div>
+
+        
+
+    </section>
+
+     <!--Section - About End-->
+
+    <!--Section - Contact Start-->
+
+      <section id="contact">
+          <p class="lg-heading">Contact</p>
+          <div class="icons">
+              <a href="https://www.linkedin.com/in/yahsuanlin/" target="_blank">
+                <i class="fab fa-linkedin fa-3x"></i>
+              </a>
+              <a href="https://github.com/yahsuanlinus" target="_blank">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+              <a href="mailto:lin.ya@husky.neu.edu">
+                <i class="fas fa-envelope-open fa-3x"></i>
+                </a>
+              <div class="twitter">
+                <h3>Find me on Twitter</h3>
+                <a href="https://twitter.com/lin_sava">
+                  <i class="fab fa-twitter fa-3x"></i>
+                  </a>
+              </div>
+                
+           </div>
+      </section>
+      <!--Section - Contact End-->
+     <!-- footer Start-->
+    <footer id="main-footer">
+     <p> Copyright &copy; 2019</p>
+    </footer>
+
+     <!-- footer End-->
+</body>
+</html>
