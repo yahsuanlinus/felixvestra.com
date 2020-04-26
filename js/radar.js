@@ -12,7 +12,7 @@ const {
   } = reactVis;
   
   function Chart({data}) {
-    return <XYPlot width={400} height={300}><XAxis/><YAxis/>
+    return <XYPlot width={400} height={400}><XAxis/><YAxis/>
       <HorizontalGridLines />
       <VerticalGridLines />
       <LineMarkSeries data={data} />
