@@ -263,7 +263,7 @@ div.timeline {
   z-index: 9000;
   background-color: #e7eaf6;
   transform: visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out; }
-  #ageWrapper.ageUnknown {
+  #ageWrapper .ageUnknown {
     visibility: visible;
     opacity: 1; }
 
@@ -271,20 +271,29 @@ div.timeline {
   position: fixed;
   top: 50%;
   left: 50%;
-  background: #113f67;
+  background-color: #6578c5;
   text-align: center;
   padding: 30px;
   width: 360px;
-  height: 150px;
-  margin-top: -105px;
+  height: 200px;
+  margin-top: -100px;
   margin-left: -185px;
-  box-sizing: border-box; }
-  #agePopUpa {
-    background-color: #113f67;
-    color: #e7eaf6;
-    padding: 10px 20px;
-    margin-top: 10px;
-    display: inline-block; }
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-top: 5px solid #113f67;
+  line-height: 2; }
+  #agePopUp .ageAnswer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px; }
+    #agePopUp .ageAnswer a {
+      color: #e7eaf6; }
+      #agePopUp .ageAnswer a:hover {
+        color: #113f67; }
+    #agePopUp .ageAnswer #ageOkay, #agePopUp .ageAnswer #ageBad {
+      text-decoration-line: none;
+      vertical-align: middle;
+      justify-content: center; }
 
 .ageConfirmed {
   z-index: -1;
