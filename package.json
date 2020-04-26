@@ -12,8 +12,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@hapi/hoek": "^9.0.4",
+    "chart.js": "^2.9.3",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.14.0",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
     "react-vis": "^1.11.7"
   },
   "devDependencies": {
