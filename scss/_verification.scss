@@ -9,7 +9,7 @@
     background-color: $secondary-color;
     transform: visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out;
     
-    &.ageUnknown {
+    .ageUnknown {
         visibility: visible;
         opacity: 1;
     }
@@ -20,26 +20,41 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    background: $primary-color;
+    background-color: darken($color: $secondary-color, $amount: 55%);
     text-align: center;
     padding: 30px;
     width: 360px;
-    height: 150px;
-    margin-top: -105px;
+    height: 200px;
+    margin-top: -100px;
     margin-left: -185px;
     box-sizing: border-box;
+    vertical-align: middle;
+    border-top: 5px solid $primary-color;
+    line-height: 2;
 
-    a {
-        background-color: $primary-color;
-        color: $secondary-color;
-        padding: 10px 20px;
-        margin-top: 10px;
-        display: inline-block;
-    }
+
+    .ageAnswer {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 10px;
+      
+        a {
+            color: $secondary-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    
+        #ageOkay, #ageBad {
+            text-decoration-line: none;
+            vertical-align: middle;
+            justify-content: center;
+        }
     
 }
 
-.ageConfirmed{
-    z-index:-1;
-    visibility:hidden;
+.ageConfirmed {
+    z-index: -1;
+    visibility: hidden;
   }
