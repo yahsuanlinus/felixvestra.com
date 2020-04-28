@@ -3,11 +3,7 @@
 @import 'mobile';
 @import 'timeline';
 @import 'verification';
-@import '../node_modules/react-vis/dist/styles/examples';
-@import '../node_modules/react-vis/dist/styles/legends';
-@import '../node_modules/react-vis/dist/styles/plot';
-@import '../node_modules/react-vis/dist/styles/radial-chart';
-@import '../node_modules/react-vis/dist/styles/treemap';
+@import 'chart';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
@@ -20,7 +16,7 @@
   body {
     background: $primary-color;
     color: $secondary-color;
-    height: 100%;
+    height: auto;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
@@ -168,19 +164,6 @@ section#work {
 
  }
 // radar
-
-#tool {
-    height: 100vh;
-    background-color: $secondary-color;
-
-    p {
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        letter-spacing: 2px;
-        position: relative;
-        background: none;
-    }
-}
 
 
 // contact

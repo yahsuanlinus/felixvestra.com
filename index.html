@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Ya-Hsuan website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/react-vis/dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="https://unpkg.com/react-vis/dist/dist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 </head>
 
     
@@ -59,12 +59,13 @@
           <h2>Hi there, welcome</h2>
             <h4>Continue visiting the site?</h4>
             <div class="ageAnswer">
-                <a href="https://www.felixvestra.com" id="ageOkay">Yes</a>
-                <a href="https://www.felixvestra.com" id="ageBad">No</a>
+                <a href="#" id="ageOkay">Yes</a>
+                <a href="#" id="ageBad">No</a>
            </div>
         </div>
       </div>
       <script src="js/verification.js"></script>
+
     <section class="main" id="home">
     
         <h1 class="lg-heading">
@@ -188,19 +189,14 @@
     </section>
 
      <!--Section - About End-->
+    <!--Section - chart Star-->
+      <section id="chart">
+       <h3 class="lg-heading">Tool</h3>
+       <canvas id="barChart" width="200" height="200"></canvas>
+       <script src="js/charts.js"></script>
+      </section>
 
-     <section id="tool">
-       <div class="lg-heading">Tools</div>
-        <div id="root" />
-       </section>
-
-
-
-
-
-
-      <!--Section - Radar End-->  
-
+    <!--Section - chart End-->
     <!--Section - Contact Start-->
 
       <section id="contact">
@@ -229,7 +225,6 @@
     <footer id="main-footer">
      <p> Copyright &copy; 2019</p>
     </footer>
-
      <!-- footer End-->
 </body>
 </html>

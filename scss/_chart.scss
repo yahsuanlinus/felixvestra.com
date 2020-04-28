@@ -1,0 +1,18 @@
+#chart {
+    height: 60vh;
+    background-color: #fff;
+
+    p {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        position: relative;
+        background: none;
+    }
+
+    #radarChart {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+}

@@ -9,6 +9,6 @@ $(document).ready(function(){
     });
  
     $('#ageBad').click(function() {
-      window.location.href='https://www.felixvestra.com';
+      window.location.href='index.html';
     });
   });
