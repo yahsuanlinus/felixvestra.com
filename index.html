@@ -190,17 +190,24 @@
 
      <!--Section - About End-->
     <!--Section - chart Star-->
-      <section id="chart">
-       <h3 class="lg-heading">Tool</h3>
-       <canvas id="barChart" width="200" height="200"></canvas>
-       <script src="js/charts.js"></script>
-      </section>
+    <section id="chart">
+      <div class="chart-canvas">
+        <canvas id="barChart" width="100vw" height="20vh" aria-label="Hello ARIA World" role="img">
+        </canvas>
+      </div>
+      <div class="radar-canvas">
+        <canvas id="radar2Chart" width="100vw" height="20vh" aria-label="Hello World" role="img">
+        </canvas>
+      </div>
+      <script src="js/charts.js"></script>
+     </section>
 
     <!--Section - chart End-->
     <!--Section - Contact Start-->
 
       <section id="contact">
-          <p class="lg-heading">Contact</p>
+          <p class="lg-heading">Let's work together</p>
+            <h3>How do you take your coffee?</h3>
           <div class="icons">
               <a href="https://www.linkedin.com/in/yahsuanlin/" target="_blank">
                 <i class="fab fa-linkedin fa-3x"></i>
@@ -209,7 +216,7 @@
                 <i class="fab fa-github fa-3x"></i>
               </a>
               <a href="mailto:lin.ya@husky.neu.edu">
-                <i class="fas fa-envelope-open fa-3x"></i>
+                <i class="fas fa-envelope-open fa-3x" target="_blank"></i>
                 </a>
               <div class="twitter">
                 <h3>Find me on Twitter</h3>
