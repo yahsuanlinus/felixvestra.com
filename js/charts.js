@@ -1,54 +1,73 @@
 let chart = document.getElementById('barChart').getContext('2d');
 let barChar = new Chart(chart, {
-  type: 'horizontalBar',
+  type: 'radar',
   data: {
     labels: ['HTML', 'CSS', 'JS', 'PHP', 'MySql', 'React'],
     datasets: [{
-        label: 'experience',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
+      label: "Student A",
+      backgroundColor: "rgba(200,0,0,0.2)",
+      data: [65, 75, 70, 80, 60, 80]
+    }, {
+      label: "Student B",
+      backgroundColor: "rgba(0,0,200,0.2)",
+      data: [54, 65, 60, 70, 70, 75]
     }]
 },
   options: {
-    
+    responsive: true,
+    tooltips: {
+      mode: 'nearest',
+    },
     layout: {
         padding: {
-            left: 10,
-            right:0,
-            top: 0,
-            bottom: 1500
-        },
-       
-      scales: {
-        xAxes: [{
-            stacked: true,
-            gridLines: {
-              offsetGridLines: true
-          }
-        }],
-        yAxes: [{
-            stacked: true
-        }]
-    }
+            left: 40,
+            right: 50,
+            top: 20,
+            bottom: 20
+        }
+    },
+    scales: {
+     
+    
+     
+  }
 
+}
+});
+let radar = document.getElementById('radarChart').getContext('2d');
+let radarChar = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ['HTML', 'CSS', 'JS', 'PHP', 'MySql', 'React'],
+    datasets: [{
+      label: "Student A",
+      backgroundColor: "rgba(200,0,0,0.2)",
+      data: [65, 75, 70, 80, 60, 80]
+    }, {
+      label: "Student B",
+      backgroundColor: "rgba(0,0,200,0.2)",
+      data: [54, 65, 60, 70, 70, 75]
+    }]
+},
+  options: {
+    responsive: true,
+    tooltips: {
+      mode: 'nearest',
+    },
+    layout: {
+        padding: {
+            left: 40,
+            right: 50,
+            top: 20,
+            bottom: 20
+        }
+    },
+    scales: {
+     
+    
+     
+  }
 
-    }
 }
 
 });

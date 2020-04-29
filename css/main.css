@@ -300,19 +300,27 @@ div.timeline {
   z-index: -1;
   visibility: hidden; }
 
-#chart {
-  height: 60vh;
-  background-color: #fff; }
-  #chart p {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    position: relative;
-    background: none; }
-  #chart #radarChart {
-    width: 100%;
-    height: 100%;
-    background-color: #fff; }
+#chart h3 {
+  color: #113f67;
+  z-index: 2;
+  display: flex;
+  justify-self: center;
+  text-align: center; }
+
+#chart .chart-canvas {
+  background-color: #e7eaf6; }
+
+#chart .title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  position: relative;
+  background: none;
+  padding: 20px; }
+
+#chart #barChart {
+  width: 100%;
+  height: 500px; }
 
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
@@ -4960,10 +4968,11 @@ section#about {
   width: 100%;
   height: auto;
   background-color: #113f67;
-  padding: 4rem;
+  padding: 2rem;
   color: #e7eaf6;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  overflow: hidden; }
   section#about p {
     margin-top: 1rem;
     font-size: 3rem;
@@ -4997,8 +5006,8 @@ section#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #e7eaf6;
-  color: #113f67;
+  background-color: #113f67;
+  color: #e7eaf6;
   text-align: center; }
   #contact p {
     margin-bottom: 2rem;
@@ -5010,7 +5019,7 @@ section#about {
     margin: auto; }
     #contact .icons i {
       margin: 20px 0;
-      color: #113f67; }
+      color: #e7eaf6; }
     #contact .icons h3 {
       margin: 20px 0; }
     #contact .icons a {
@@ -5022,5 +5031,5 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #113f67;
-  color: #e7eaf6; }
+  background-color: #e7eaf6;
+  color: #113f67; }
