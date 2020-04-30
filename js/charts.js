@@ -1,32 +1,22 @@
-let chart = document.getElementById('barChart').getContext('2d');
-let barChar = new Chart(chart, {
-  type: 'radar',
-  data: {
-    labels: ['HTML', 'CSS', 'JS', 'PHP', 'MySql', 'React'],
-    datasets: [{
+var marksCanvas = document.getElementById("marksChart");
+
+var marksData = {
+  labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
+  datasets: [
+    {
       label: "Student A",
       backgroundColor: "rgba(200,0,0,0.2)",
-      data: [65, 75, 70, 80, 60, 80]
-    }, {
+      data: [65, 75, 70, 80, 60, 80],
+    },
+    {
       label: "Student B",
       backgroundColor: "rgba(0,0,200,0.2)",
-      data: [54, 65, 60, 70, 70, 75]
-    }]
-},
-  options: {
-    responsive: true,
-    tooltips: {
-      mode: 'nearest',
+      data: [54, 65, 60, 70, 70, 75],
     },
-    layout: {
-        padding: {
-            left: 40,
-            right: 50,
-            top: 20,
-            bottom: 20
-        }
-    },
+  ],
+};
 
-}
+var radarChart = new Chart(marksCanvas, {
+  type: "radar",
+  data: marksData,
 });
-

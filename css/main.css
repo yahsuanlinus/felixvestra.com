@@ -1,3 +1,4 @@
+@import url(../node_modules/chart.js/dist/Chart.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 .menu-btn {
   position: absolute;
@@ -299,10 +300,6 @@ div.timeline {
 .ageConfirmed {
   z-index: -1;
   visibility: hidden; }
-
-section#chart {
-  height: auto;
-  background-color: #e7eaf6; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -7450,7 +7447,7 @@ a.text-dark:hover, a.text-dark:focus {
  */
 .fa,
 .fas,
-section#about .background .education h2::before,
+#about .background .education h2::before,
 .far,
 .fal,
 .fad,
@@ -7463,7 +7460,7 @@ section#about .background .education h2::before,
   text-rendering: auto;
   line-height: 1; }
 
-section#about .background .education h2::before {
+#about .background .education h2::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -7544,7 +7541,7 @@ section#about .background .education h2::before {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
-section#about .background .education h2.fa-pull-left::before,
+#about .background .education h2.fa-pull-left::before,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -7552,7 +7549,7 @@ section#about .background .education h2.fa-pull-left::before,
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
-section#about .background .education h2.fa-pull-right::before,
+#about .background .education h2.fa-pull-right::before,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -11969,12 +11966,12 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot");
+  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas,
-section#about .background .education h2::before {
+#about .background .education h2::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -11987,8 +11984,8 @@ section#about .background .education h2::before {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot");
+  src: url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -12002,7 +11999,7 @@ body {
   color: #e7eaf6;
   height: auto;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px; }
 
 h1,
@@ -12037,8 +12034,11 @@ header {
   color: #e7eaf6; }
 
 .main {
-  padding: 4rem;
-  height: 110vh; }
+  margin-top: 5em;
+  margin-bottom: 20em;
+  padding: 10rem;
+  height: auto;
+  position: relative; }
   .main#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
@@ -12063,12 +12063,12 @@ header {
       .main .icons a:hover {
         color: #e7eaf6;
         transition: all 0.5s ease-out; }
-  .main#home {
+  .main #home {
     overflow: hidden; }
-    .main#home h1 {
+    .main #home h1 {
       margin-top: 20vh; }
 
-section#work {
+#work {
   width: 100%;
   height: auto;
   padding: 2rem;
@@ -12076,7 +12076,7 @@ section#work {
   overflow-y: hidden;
   overflow-x: scroll;
   color: #113f67; }
-  section#work p {
+  #work p {
     margin-top: 1rem;
     font-size: 3rem;
     letter-spacing: 2px;
@@ -12086,16 +12086,15 @@ section#work {
     text-align: center;
     background: none; }
 
-section#about {
+#about {
   width: 100%;
   height: auto;
   background-color: #113f67;
-  padding: 2rem;
+  padding: 4rem;
   color: #e7eaf6;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden; }
-  section#about p {
+  display: block;
+  position: relative; }
+  #about p {
     margin-top: 1rem;
     font-size: 3rem;
     letter-spacing: 2px;
@@ -12104,23 +12103,36 @@ section#about {
     align-items: center;
     text-align: center;
     background: none; }
-  section#about .background {
+  #about .background {
     display: grid;
     line-height: 2.5; }
-    section#about .background .education h2:hover {
+    #about .background .education h2:hover {
       cursor: pointer;
       color: #8f8f8f;
       transition: all 0.5s ease-out; }
-    section#about .background .education h2::before {
+    #about .background .education h2::before {
       content: "\f19d";
       margin-right: 5px; }
-    section#about .background .summary h5 {
+    #about .background .summary h5 {
       margin: 0 auto;
       font-size: 1.1rem;
       letter-spacing: 2px;
       line-height: 2.5;
       position: relative;
       text-align: left; }
+
+#chart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #e7eaf6; }
+  #chart #myChart {
+    display: block;
+    width: 80% !important;
+    height: 20% !important;
+    margin: 20px auto; }
+  #chart::after {
+    clear: both; }
 
 #contact {
   width: 100%;
@@ -12131,8 +12143,9 @@ section#about {
   background-color: #113f67;
   color: #e7eaf6;
   text-align: center; }
+  #contact::before {
+    clear: both; }
   #contact p {
-    margin-bottom: 2rem;
     font-size: 3rem;
     letter-spacing: 2px;
     position: relative;
@@ -12149,9 +12162,11 @@ section#about {
 
 footer {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: #e7eaf6;
   color: #113f67; }
+  footer p {
+    margin-bottom: 0; }
