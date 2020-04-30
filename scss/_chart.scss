@@ -1,29 +1,5 @@
-#chart {
-
-    h3 {
-        color: $primary-color;
-        z-index: 2;
-        display: flex;
-        justify-self: center;
-        text-align: center;
-    }
-
-    .chart-canvas {
-        background-color: $secondary-color;
-    }
-
-    .title {
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        letter-spacing: 2px;
-        position: relative;
-        background: none;
-        padding: 20px;
-    }
-
-    #barChart {
-        width: 100%;
-        height: 500px;
-    }
-
+section#chart {
+    height: auto;
+    background-color: $secondary-color;
 }
+
